@@ -2,10 +2,16 @@
 
 DESIGN
 
-    slave emory is designed to be 4K address per SRAM
+    Memory mapping
 
-    000 to FFF - I-MEM (read only ?)
-    1000 to 1FFF - D-MEM (valid read and write)
+    slave1 : 0000 to FFFF - I-MEM (read only ?)
+    slave2 : 1_0000 to 1_FFFF - D-MEM (valid read and write)
+    Defalut slave : 20000 - ffff_ffff (會response ERROR -> RESP == DECERR)
+        注意 : 不用寫Default slave, 只要當mem access address at Default slave時 valid = 0就好
+
+    Master : Single Transfer -> Burst Length = 1
+    Bridge and Slave : Burst Transfer -> 要做到Burst Length = 4
+    要做2M 2S
 
 
     burst modes are:
