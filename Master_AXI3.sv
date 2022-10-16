@@ -30,7 +30,7 @@ module Master_AXI3 (
     input logic	[DATAWIDTH-1:0]	ARaddr,				//
     input logic	[SIZE-1:0]	ARsize,					//
     input logic	[SIZE-2:0]	ARburst,				///////////////////////////////////
-    output logic	[4095:0] [7:0] read_memory      //creating a 2D memory array at the axi-> master side for storing the read data recieved by the master from slave .
+    output logic	[16383:0] [7:0] read_memory      //creating a 2D memory array at the axi-> master side for storing the read data recieved by the master from slave .
 );
     
 Master M_behavior();
