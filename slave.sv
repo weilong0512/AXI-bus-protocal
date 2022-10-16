@@ -1,7 +1,5 @@
-`define DATAWIDTH 32
-`define SIZE 3
+`include "define.svh"
 
-[`SIZE-1:0]
 modport Slave(
 //WRITE DATA CHANNEL
 	output logic WREADY,     //write ready signal from slave

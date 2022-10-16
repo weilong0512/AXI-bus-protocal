@@ -1,8 +1,8 @@
-`define DATAWIDTH 32
-`define SIZE 3
+`include "define.svh"
 
-[`SIZE-1:0]
-modport Master(
+// burst bits size determined by how mamy burst operation you want 
+// here use 2 bit 00-> SINGLE   01-> INCR   10-> WRAP4   11-> INCR4
+module Master(
 //WRITE DATA CHANNEL
 	input logic WREADY,     //write ready signal from slave
 	output logic WVALID,		//valid signal for write 
@@ -43,3 +43,6 @@ modport Master(
 	input logic RVALID,		//read data valid signal
 	output logic RREADY		//read ready signal
 );
+
+
+endmodule
