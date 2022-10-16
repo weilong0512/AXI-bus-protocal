@@ -14,9 +14,13 @@ DESIGN
         3、wrapping
     
 
-The AMBA AXI3 has 5 channels
-    1、Write Address Channel
-    2、Write Data Channel
-    3、Write Response Channel
-    4、Read Address Channel
-    5、Read Data Channel
+    The AMBA AXI3 has 5 channels
+        1、Write Address Channel
+        2、Write Data Channel
+        3、Write Response Channel
+        4、Read Address Channel
+        5、Read Data Channel
+
+    目前寫了master slave 的module 但是各個長度還要再調整
+
+
