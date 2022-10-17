@@ -17,7 +17,7 @@ DESIGN
     burst modes are:
         1、fixed
         2、incremental
-        3、wrapping
+        3、wrapping // we only need to implement INCR
     
 
     The AMBA AXI3 has 5 channels
